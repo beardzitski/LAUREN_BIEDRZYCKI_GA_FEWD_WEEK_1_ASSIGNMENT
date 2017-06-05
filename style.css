@@ -1,56 +1,136 @@
-body {
-  background-color: #f6f6f6;
-  border-top: 5px solid #222;
-  border-bottom: 5px solid #222;
-  font-family: sans-serif;
-  margin: 30px auto;
-  padding: 50px;
-  max-width: 800px;
+/*********************** NAV ***********************/
+ul.main-nav {
+  margin: 0px;
 }
 
-header, footer {
-  text-align: center;
+.main-nav {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: solid;
+  border-bottom-color: lightgrey;
 }
 
-footer {
-  margin-top: 10px;
+.main-nav li:first-child {
+  margin-right: auto;
+  margin-left: 30px;
+  color: white;
+  font-weight: lighter;
 }
 
-nav li {
-    display: inline-block;
+.main-nav a {
+  margin-right: 30px;
+  border-radius: 5px;
+  color: black;
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+  font-family: 'cantarell', sans-serif;
 }
 
-nav {
-  color: #222;
-}
-
-a {
-  font-weight: bold;
-  color: #05080c;
-}
-
-li.currentpage a {
-  text-decoration: none;
+.active-page {
   font-style: italic;
 }
 
-ul {
+/************************ LISTS ***********************/
+li {
   list-style: none;
-  padding: 0;
 }
 
-hr {
-  none:
-  border-top: 1px solid #222;
-  margin: 30px 0;
+ul {
+  padding: 0px;
 }
 
-img.avatar {
-  max-width: 200px;
-  border-radius: 500px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 30px;
+body {
+  margin: 0px auto;
+  background-color: whitesmoke;
+}
+div {
+  margin: 60px auto;
+  max-width: 900px;
+  position: 0 auto;
+  padding: 0px 30px;
+
+}
+.avatar {
   float: right;
+  max-width: 300px;
+  padding: 0px 15px;
+  border-radius: 50px;
+}
+/******************** FOOTER ***********************/
+ul.social-links {
+  display: block;
+  padding: 0px;
+}
+
+.social-links li {
+  display: inline-block;
+  margin: 0px auto;
+}
+
+.social-logos img {
+  max-width: 30px;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+footer {
+  text-align: center;
+}
+
+/*********************** FONTS ***********************/
+h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+  color: black;
+}
+h3{
+  font-family: 'cantarell', sans-serif;
+  font-weight: 700;
+  color: black;
+}
+
+p, h6 {
+  font-family: 'cantarell', sans-serif;
+  color: slategrey;
+}
+
+/*********************** BUTTONS *********************/
+.say-hi {
+  background-color: #4867a1;
+  border-color: white;
+  border-style: none;
+  border-radius: 7px;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Cantarell', sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  color: white;
+}
+
+.say-hi:hover {
+  background-color: white;
+  border-color: #4867a1;
+  border-style: solid;
+  color: #4867a1;
+  padding: 10px;
+}
+
+/****************** PORTFOLIO PAGE *******************/
+
+.portfolio-thumbnail {
+  float: left;
+}
+
+.portfolio-thumbnail-img {
+  max-width: 300px;
+  margin-right: 30px;
+}
+
+/*********************** OTHER STUFF ******************/
+hr {
+  max-width: 900px;
 }
